@@ -20,13 +20,16 @@ Using the airquality dataset in R, we are going to predict `Ozone` by three way 
 
 `lm.model <- lm(Ozone ~ Solar.R + Solar.R:wind + Solar.R:temp + wind:temp + Solar.R:wind:temp, data = airquality)`
 
-Step 3: Plot the simple slopes (scores are based on 1 SD higher and lower than the mean for moderator)
+Step 3: Plot the simple slopes (scores are based on 1 SD higher and lower than the mean for moderator):
+
 `slopePlot(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'), modNames = c('Wind', 'Temperature'))`
 
-Step 4: Check if simple slopes are significantly different than zero
+Step 4: Check if simple slopes are significantly different than zero:
+
 `slopeTest(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`
 
-Step 5: Check if the slopes are significantly different than each other (pairwise slope differences)
+Step 5: Check if the slopes are significantly different than each other (pairwise slope differences):
+
 `slopeDifference(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`
 
 # How to Cite

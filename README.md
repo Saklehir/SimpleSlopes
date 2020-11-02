@@ -24,6 +24,8 @@ Step 3: Plot the simple slopes (scores are based on 1 SD higher and lower than t
 
 `slopePlot(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'), modNames = c('Wind', 'Temperature'))`
 
+Here `modNames` refers to the moderator names you want to appear in x and y axes. Instead of using the ones in the dataset, you can specify the variable names for publishability purposes.
+
 Step 4: Check if simple slopes are significantly different than zero:
 
 `slopeTest(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`

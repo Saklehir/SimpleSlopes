@@ -22,10 +22,10 @@ Using the airquality dataset in R, we are going to predict `Ozone` by three way 
 
 Step 3: Plot the simple slopes (scores are based on 1 SD higher and lower than the mean for moderator):
 
-`slopePlot(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'), modNames = c('Wind', 'Temperature'))`
+`slopePlot(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'), modNames = c('Wind', 'Temperature'), xlab = 'Solar Radiation', ylab = 'Ozone Level')`
 
-Here `modNames` refers to the moderator names you want to appear in x and y axes. Instead of using the ones in the dataset, you can specify the variable names for publishability purposes.
-
+Here `modNames` refers to the moderator names you want to appear in x and y axes. Instead of using the ones in the dataset, you can specify the moderating variable names for publishability purposes. `xlab` and `ylab` refer to the predictor and outcome variables respectively. Just like moderators, you can specify predictor and outcome variables to be used in the figure.
+ 
 Step 4: Check if simple slopes are significantly different than zero:
 
 `slopeTest(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`

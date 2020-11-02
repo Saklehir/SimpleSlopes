@@ -1,0 +1,13 @@
+Package: SimpleSlopes
+Type: Package
+Title: Simple Slope Significance and Difference for 3-Way Interactions following Dawson & Richter (2006)
+Version: 0.1.0
+Author: Cafer Bakac
+Maintainer: Cafer Bakac <cafer.bakac@tum.de>
+Description: This package passes 'lm' objects and 1) plots three way interactions in a publishable format
+    2) checks if simple slopes are different from zero, and
+    3) computes slope differences. All fo these are computed following recommendations by Dawson & Richter (2006). 
+License: CC BY
+Encoding: UTF-8
+LazyData: true
+Suggests: ggplot2

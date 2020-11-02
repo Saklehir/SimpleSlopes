@@ -5,9 +5,7 @@ It is useful for plotting, checking the significance of slopes from zero, and ch
 # How to Install on Your Local Device:
 Step 1: install devtools if you dont have it on your devide
 
-`if (!(require(devtools)) {
-  install.packages('devtools')
-}`
+`if (!require(devtools)) install.packages('devtools')`
 
 Step 2: 
 

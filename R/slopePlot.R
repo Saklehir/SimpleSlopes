@@ -109,7 +109,7 @@ slopePlot <- function(
   
   
   ## Call library
-  library(ggplot2)
+  if (!require(ggplot2)) install.packages('ggplot2')
   
   ## Convert 'Slope' to factor
   dat.plot$Slope <- factor(dat.plot$Slope)

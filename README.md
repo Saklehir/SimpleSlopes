@@ -4,12 +4,14 @@ It is useful for plotting, checking the significance of slopes from zero, and ch
 
 # How to Install on Your Local Device:
 Step 1: install devtools if you dont have it on your devide
-if (!(require(devtools)) {
+
+`if (!(require(devtools)) {
   install.packages('devtools')
-}
+}`
 
 Step 2: 
-install_github("Saklehir/SimpleSlopes")
+
+`install_github("Saklehir/SimpleSlopes")`
 
 # How to Use the Package
 Step 1: Load the package
@@ -35,4 +37,4 @@ Step 5: Check if the slopes are significantly different than each other (pairwis
 `slopeDifference(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`
 
 # How to Cite
-Bakac, C. (2020). SimpleSlopes: An R package for Simple Slope Significance and Difference for 3-Way Interactions following Dawson & Richter (2006) (version 0.1.0). Retrieved from https://github.com/Saklehir/SimpleSlopes
+Bakac, C. (2020). SimpleSlopes: An R package for probing 3-way interactions (version 0.1.0). Retrieved from https://github.com/Saklehir/SimpleSlopes

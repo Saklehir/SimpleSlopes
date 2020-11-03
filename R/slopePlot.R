@@ -89,17 +89,17 @@ slopePlot <- function(
 
   # High Low
   dat.HighMod1LowMod2 <- data.frame(xval = x.val)
-  dat.HighMod1LowMod2$yval <- i.Slope1 + dat.HighMod1LowMod2$xval*grSlope2
+  dat.HighMod1LowMod2$yval <- i.Slope2 + dat.HighMod1LowMod2$xval*grSlope2
   dat.HighMod1LowMod2$Slope <- rep(paste(paste('High',mod1,sep = ''), paste('Low', mod2, sep = ''), sep = ' '), nrow(dat.HighMod1LowMod2))
 
   # Low High
   dat.LowMod1HighMod2 <- data.frame(xval = x.val)
-  dat.LowMod1HighMod2$yval <- i.Slope1 + dat.LowMod1HighMod2$xval*grSlope3
+  dat.LowMod1HighMod2$yval <- i.Slope3 + dat.LowMod1HighMod2$xval*grSlope3
   dat.LowMod1HighMod2$Slope <- rep(paste(paste('Low',mod1,sep = ''), paste('High', mod2, sep = ''), sep = ' '), nrow(dat.LowMod1HighMod2))
 
   # Low High
   dat.LowMod1LowMod2 <- data.frame(xval = x.val)
-  dat.LowMod1LowMod2$yval <- i.Slope1 + dat.LowMod1LowMod2$xval*grSlope4
+  dat.LowMod1LowMod2$yval <- i.Slope4 + dat.LowMod1LowMod2$xval*grSlope4
   dat.LowMod1LowMod2$Slope <- rep(paste(paste('Low',mod1,sep = ''), paste('Low', mod2, sep = ''), sep = ' '), nrow(dat.LowMod1LowMod2))
 
   ## Create final data frame

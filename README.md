@@ -1,5 +1,5 @@
 # SimpleSlopes Package
-This package is based created based on suggestions by Dawson & Richter (2006) for three way interactions. 
+This package is created based on suggestions by Dawson & Richter (2006) for three way interactions. 
 It is useful for plotting, checking the significance of slopes from zero, and checking the differences among slopes. 
 
 # How to Install on Your Local Device:
@@ -24,7 +24,7 @@ Step 3: Plot the simple slopes (scores are based on 1 SD higher and lower than t
 
 `slopePlot(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'), modNames = c('Wind', 'Temperature'), xlab = 'Solar Radiation', ylab = 'Ozone Level')`
 
-Here `modNames` refers to the moderator names you want to appear in x and y axes. Instead of using the ones in the dataset, you can specify the moderating variable names for publishability purposes. `xlab` and `ylab` refer to the predictor and outcome variables respectively. Just like moderators, you can specify predictor and outcome variables to be used in the figure.
+Here `modNames` refers to the moderator names you want to appear in figure legend. Instead of using the ones in the dataset, you can specify the moderating variable names for publishability purposes. `xlab` and `ylab` refer to the predictor and outcome variables respectively. Just like moderators, you can specify predictor and outcome variables to be used in the figure.
  
 Step 4: Check if simple slopes are significantly different than zero:
 

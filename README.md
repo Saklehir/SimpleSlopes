@@ -35,4 +35,4 @@ Step 5: Check if the slopes are significantly different than each other (pairwis
 `slopeDifference(model=lm.model, xvar = 'Solar.R', modvars = c('wind', 'temp'))`
 
 # How to Cite
-Bakac, C. (2020). SimpleSlopes: An R package for probing 3-way interactions (version 0.1.0). Retrieved from https://github.com/Saklehir/SimpleSlopes
+Bakaç, C. (2020). SimpleSlopes: An R package for probing 3-way interactions (version 0.1.0). Retrieved from https://github.com/Saklehir/SimpleSlopes

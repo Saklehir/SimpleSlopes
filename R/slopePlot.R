@@ -107,7 +107,7 @@ slopePlot <- function(
   data.plot <- rbind(df.HighMod1HighMod2, df.HighMod1LowMod2, df.LowMod1HighMod2, df.LowMod1LowMod2)
   
   ## Call library
-  library(ggplot2)
+  if (!require(ggplot2)) install.packages('ggplot2')
   
   ## Convert 'Slope' to factor
   data.plot$Slope <- factor(data.plot$Slope)

@@ -17,6 +17,7 @@ library(SimpleSlopes)
 
 Step 2: Create an `lm` object with three way interactions (continous variables)
 Using the airquality dataset in R, we are going to predict `Ozone` by three way interaction of solar radiation (`Solar.R`), wind (`Wind`) and temperature (`Temp`)
+When you build your model, please make sure that predictor comes first, first moderator second and second moderator third in order. You will have to be consistent in entering the moderator variables in that order in the following functions as well.
 
 `lm.model <- lm(Ozone ~ Solar.R + Solar.R:Wind + Solar.R:Temp + Wind:Temp + Solar.R:Wind:Temp, data = airquality)`
 
